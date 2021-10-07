@@ -2,20 +2,25 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Counter() {
-  const [counter, setCounter] = useState(0);
-
-  function increment() {
-    setCounter(counter+1);
+class MyButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: 0};
+    this.buttonClicked = this.buttonClicked.bind(this);
   }
-  return <div>
-  <p>{counter}</p>
-  <button onClick={increment}>+1</button>
-  </div>;
-}
+  
+  buttonClicked(event) {
+    this.setState({value: this.state.value+1});
+  }
+};
+  
+export default function MyButton () {
+    return (
+    	<div>
+        <div>{this.state.value}</div>
+        <button onClick={this.buttonClicked}>Click</button>
+      </div>
+    );
+  }
 
-const el = <Counter />; 
-ReactDOM.render(
-  el, 
-  document.getElementById('root')
-);
+
