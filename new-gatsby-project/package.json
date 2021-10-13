@@ -16,13 +16,16 @@
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
-    "@mui/icons-material": "^5.0.1",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/lab": "^5.0.0-alpha.50",
     "@mui/material": "^5.0.2",
     "bootstrap": "^5.1.1",
     "gatsby": "^3.13.1",
     "gatsby-link": "^3.14.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-bootstrap": "^2.0.0-rc.0",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
     "prettier": "2.4.1"

@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import CallToActionIcon from '@mui/icons-material/CallToAction';
 import AccessibilityNewSharpIcon from '@mui/icons-material/AccessibilityNewSharp';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+import Layout from "../components/navbar/layout";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -18,6 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
+    <Layout>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={4}>
@@ -28,8 +30,7 @@ export default function BasicGrid() {
             <p>
             <Button
                 variant="contained"
-                startIcon={<CallToActionIcon />}
-                color="success"
+                startIcon={<CallToActionIcon color="secondary" />}
                 onClick={() => {
                     alert('clicked');
                 }}
@@ -47,8 +48,7 @@ export default function BasicGrid() {
             <p>
             <Button
                 variant="contained"
-                startIcon={<AccessibilityNewSharpIcon />}
-                color="success"
+                startIcon={<AccessibilityNewSharpIcon color="secondary" />}
                 onClick={() => {
                     alert('clicked');
                 }}
@@ -66,8 +66,7 @@ export default function BasicGrid() {
             <p>
             <Button
                 variant="contained"
-                startIcon={<AccountCircleSharpIcon />}
-                color="success"
+                startIcon={<AccountCircleSharpIcon color="secondary" />}
                 onClick={() => {
                     alert('clicked');
                 }}
@@ -79,5 +78,6 @@ export default function BasicGrid() {
         </Grid>
       </Grid>
     </Box>
+    </Layout>
   );
 }

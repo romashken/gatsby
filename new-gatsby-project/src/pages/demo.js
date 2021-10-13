@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './style.css';
+import Layout from "../components/navbar/layout";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -14,6 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
+    <Layout>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
@@ -33,5 +35,6 @@ export default function BasicGrid() {
         </Grid>
       </Grid>
     </Box>
+    </Layout>
   );
 }

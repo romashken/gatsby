@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './style.css';
+import SvgIcon from './SVG_Logo.svg';
+import Layout from "../components/navbar/layout";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -14,14 +16,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BasicGrid() {
   return (
+    <Layout>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
             <Item>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <title>Logo</title>
-                <path>d="M13 23.959C19.16 23.45 24 18.29 24 12c0-6.627-5.373-12-12-12S0 5.373 0 12c0 6.29 4.84 11.45 11 11.959v-8.56S10.8 12 8 12c0 0 1.5.8 1.9 3.7C4.2 16.9 4 9.1 4 9.1s6.1-.9 7.3 3C12.1 6 21 7 21 7s0 9.6-7 8.9c0-2 2-5 2-5-3 1-3 4.9-3 4.9v8.16zM12.041 24h-.082.082z" fill="currentColor"
-                </path>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 300 300">
+              <g fill="#61DAFB">
+              </g>
             </svg>
             </Item>
         </Grid>
@@ -37,5 +39,6 @@ export default function BasicGrid() {
         </Grid>
       </Grid>
     </Box>
+    </Layout>
   );
 }

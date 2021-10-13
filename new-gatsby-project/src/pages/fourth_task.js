@@ -4,16 +4,19 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './style.css';
+import Layout from "../components/navbar/layout";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
+  height: theme.spacing(90),
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
 
 export default function BasicGrid() {
   return (
+    <Layout>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
@@ -27,11 +30,10 @@ export default function BasicGrid() {
           </Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>
-            <img src="https://avatars.mds.yandex.net/get-zen_doc/3446567/pub_5ecd52c2710c162dc70d87c2_5ed2292c66114c67b34fa9df/scale_1200" alt="landscape" className="Seaside"/>
-          </Item>
+          <Item className="backpic"/>
         </Grid>
       </Grid>
     </Box>
+    </Layout>
   );
 }
