@@ -45,6 +45,9 @@ export default function Navbar() {
                 <Link to="/sixth_task">Шаблон №6</Link>
                 </p>
                 <p>
+                <Link to="/map">MAP</Link>
+                </p>
+                <p>
                 <Link to="/hook_counter">Счётчик</Link>
                 </p>
                 <p>
