@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './style.css';
-import { ReactComponent as MyPic } from '../svg/SVG_Logo.svg';
-import Gera from '../img/geralt_1.jpg';
+import MyPic from '../svg/SVG_Logo.svg';
 import Layout from "../components/navbar/layout";
 
 const Item = styled(Paper)(({ theme }) => ({
