@@ -1,7 +1,7 @@
 import React from 'react';
 import '../pages/style.css';
 
-export default function Card() {
+export default function CardSpin() {
     return (
             <div className="card">
                 <div className="face front">

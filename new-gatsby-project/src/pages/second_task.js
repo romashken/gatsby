@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import './style.css';
-import SvgIcon from './SVG_Logo.svg';
+import { ReactComponent as MyPic } from '../svg/SVG_Logo.svg';
+import Gera from '../img/geralt_1.jpg';
 import Layout from "../components/navbar/layout";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -20,11 +21,8 @@ export default function BasicGrid() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-            <Item>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 300 300">
-              <g fill="#61DAFB">
-              </g>
-            </svg>
+            <Item> 
+                <img src={MyPic} alt="iconio" />
             </Item>
         </Grid>
         <Grid item xs={6}>

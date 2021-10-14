@@ -6,7 +6,7 @@ import Layout from "../components/navbar/layout";
 const colors = ['green', 'red', 'orange', 'violet', 'blue'];
 const listItems = colors.map((color) =>
   <Chip
-    color="info" 
+    style={{ backgroundColor: `${color}`}}
     label={color}
   />
 );
